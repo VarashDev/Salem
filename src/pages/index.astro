@@ -1,18 +1,36 @@
 ---
+const city = "Salem";
 import "../styles/global.css";
+import srcImage from "../assets/fishing-near-salem-oregon.webp";
+import { Image } from "astro:assets";
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="description" content="Discover the top places for fishing near Salem, Oregon, in this 2025 guide. 
+		Learn about rivers, lakes, gear tips, licenses, and more for all skill levels.">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta property="og:image" content="" />
+		<title>Fishing near Salem, Oregon</title>
 	</head>
-	<body class="min-h-screen">
+	<body class="min-h-screen bg-amber-100">
 		<main class="px-24 max-w-7xl mx-auto w-full max-sm:px-5">
-			<h1 class="text-4xl text-teal-900 font-bold my-5">Astro</h1>
+			<center>
+			<h1 class="text-4xl text-teal-900 font-black my-4">Fishing near Salem, Oregon</h1>
+			<p class="mb-4">Discover the top places for fishing near Salem, Oregon, in this 2025 guide. Learn about 
+				rivers, lakes, gear tips, licenses, and more for all skill levels.</p>
+
+			<Image
+				src={srcImage}
+				alt="Fishing near Salem, Oregon"
+				loading={"eager"}
+				fetchpriority={"high"}
+				/>
+				<br>
+			</center>
+
 		</main>
 	</body>
 </html>
