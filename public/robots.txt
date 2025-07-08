@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://salem.oregonfishingforum.com/sitemap-index.xml

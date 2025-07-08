@@ -1,30 +1,26 @@
 ---
-const city = "Salem";
-import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import MyH1 from "../components/MyH1.astro";
 import srcImage from "../assets/fishing-near-salem-oregon.webp";
 import { Image } from "astro:assets";
+import Link from "../components/Link.astro";
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Discover the top places for fishing near Salem, Oregon, in this 2025 guide. 
-		Learn about rivers, lakes, gear tips, licenses, and more for all skill levels.">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta property="og:image" content="" />
-		<title>Fishing near Salem, Oregon</title>
-	</head>
-	<body class="min-h-screen bg-amber-100">
-		<main class="px-24 py-4 max-w-7xl mx-auto w-full max-sm:px-5">
-			<center>
-			<h1 class="text-4xl text-teal-900 font-black my-4">Fishing near Salem, Oregon</h1>
+<Layout 
+title="Fishing near Salem, Oregon"
+description="Discover the top places for fishing near Salem, Oregon, in this 2025 guide. Learn about rivers, lakes, gear tips, licenses, and more."
+url="https://salem.oregonfishingforum.com/"
+type="website"
+site_name="Oregon Fishing Forum"
+ogimage={srcImage.src}
+>
+    <center>
+			<MyH1 text="Fishing near Salem, Oregon" />
 			<p class="mb-4">Discover the top places for fishing near Salem, Oregon, in this 2025 guide. Learn about 
-				rivers, lakes, gear tips, licenses, and more for all skill levels.</p>
+				rivers, lakes, gear tips, licenses, and more.</p>
 
 			<Image
 				src={srcImage}
-				alt="Fishing near Salem, Oregon"
+				alt="Fishing near Portland, Oregon"
 				loading={"eager"}
 				fetchpriority={"high"}
 				/>
@@ -32,7 +28,7 @@ import { Image } from "astro:assets";
 			</center>
 
 			<p class="mb-4">
-    Nestled in the heart of the Willamette Valley, <strong>Salem, Oregon</strong> is more than just the state capital—it's a paradise for outdoor lovers and anglers alike. Whether you're a seasoned pro or casting your line for the first time, fishing near Salem offers a perfect blend of accessibility, beauty, and species diversity.
+    Nestled in the heart of the Willamette Valley, Salem, Oregon is more than just the state capital—it's a paradise for outdoor lovers and anglers alike. Whether you're a seasoned pro or casting your line for the first time, fishing near Salem offers a perfect blend of accessibility, beauty, and species diversity.
 </p>
 <p class="mb-4">
     With everything from fast-flowing rivers and serene lakes to hidden ponds and stocked reservoirs, the Salem area caters to every type of angler. Thanks to Oregon’s progressive fishery management and ample public access points, you're never too far from a prime fishing spot.
@@ -483,17 +479,5 @@ import { Image } from "astro:assets";
 <p class="mb-4">
     So grab your rod, check the weather, and make your way to one of Salem’s spectacular fishing spots—<strong>your next big catch is waiting</strong>.
 </p>
-		</main>
-        		<footer>
-			<div class="bg-teal-700 p-4">
-				<div class="grid gap-2 grid-cols-2 md:grid-cols-4 px-24 max-w-7xl mx-auto w-full max-sm:px-5 text-white text-lg font-semibold">
-					<div><a href="https://portland.oregonfishingforum.com">Portland</a></div>
-					<div><a href="https://eugene.oregonfishingforum.com">Eugene</a></div>
-					<div><a href="https://salem.oregonfishingforum.com">Salem</a></div>
-					<div><a href="https://gresham.oregonfishingforum.com">Gresham</a></div>
-				</div>
-			</div>
-			<div class="bg-teal-900 text-white text-center p-4">© 2006-2025 <a href="https://www.oregonfishingforum.com">Oregon Fishing Forum</a></div>
-		</footer>
-	</body>
-</html>
+
+</Layout>
