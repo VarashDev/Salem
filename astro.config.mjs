@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://portland.oregonfishingforum.com',
+  site: 'https://salem.oregonfishingforum.com',
   vite: {
     plugins: [tailwindcss()]
   },
