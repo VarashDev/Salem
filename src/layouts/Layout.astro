@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Nav from "../components/Nav.astro";
 const {title, description, url, type, site_name, ogimage} = Astro.props;
 ---
 <html lang="en">
@@ -21,20 +22,15 @@ const {title, description, url, type, site_name, ogimage} = Astro.props;
 		<meta property="twitter:image" content={ogimage} />
 	</head>
 	<body class="min-h-screen bg-amber-100">
+		<header class="bg-teal-900 text-white sticky top-0 z-50 shadow-md">
+			<Nav />
+		</header>
 		<main class="px-24 py-4 max-w-7xl mx-auto w-full max-sm:px-5">
 
             <slot />
 
             </main>
 		<footer>
-			<div class="bg-teal-500 p-4">
-					<div class="grid gap-2 grid-cols-2 md:grid-cols-4 px-24 max-w-7xl mx-auto w-full max-sm:px-5 text-teal-1000 text-lg font-semibold">
-					<div><a href="/salmon/">Salmon</a></div>
-					<div><a href="/steelhead/">Steelhead</a></div>
-					<div><a href="/trout/">Trout</a></div>
-					<div><a href="/bass/">Bass</a></div>
-				</div>
-			</div>
 			<div class="bg-teal-700 p-4">
 				<div class="grid gap-2 grid-cols-2 md:grid-cols-4 px-24 max-w-7xl mx-auto w-full max-sm:px-5 text-white text-lg font-semibold">
 					<div><a href="https://portland.oregonfishingforum.com">Portland</a></div>
@@ -49,6 +45,15 @@ const {title, description, url, type, site_name, ogimage} = Astro.props;
 			</div>
 			<div class="bg-teal-900 text-white text-center p-4">© 2006-2025 <a href="https://www.oregonfishingforum.com">Oregon Fishing Forum</a></div>
 		</footer>
+	<script>
+		// Toggle mobile menu
+		const menuBtn = document.getElementById('mobile-menu-button');
+		const mobileMenu = document.getElementById('mobile-menu');
+
+		menuBtn.addEventListener('click', () => {
+		mobileMenu.classList.toggle('hidden');
+		});
+	</script>
 	</body>
 </html>
 
