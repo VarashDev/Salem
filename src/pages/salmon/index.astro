@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/salmon-fishing-near-salem-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Salmon fishing near Salem, Oregon"
@@ -98,6 +99,9 @@ ogimage={srcImage.src}
 <p>
     While not a major salmon site, this nearby reservoir provides excellent angling for trout and kokanee—great for families and a relaxing side trip.
 </p>
+
+<p>Read more about <Link href="/salmon/best-spots/" text="Best salmon fishing spots near Salem, Oregon" /></p>
+
 <h2>
     Required Licenses and Regulations
 </h2>

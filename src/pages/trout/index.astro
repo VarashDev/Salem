@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/trout-fishing-near-salem-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Trout fishing near Salem, Oregon"
@@ -163,6 +164,9 @@ ogimage={srcImage.src}
 <p>
     Small streams feeding the Willamette hold surprisingly good numbers of trout, especially cutthroat. These creeks require stealth and light gear.
 </p>
+
+<p>Read more about <Link href="/trout/best-spots/" text="Best trout fishing spots near Salem, Oregon" /></p>
+
 <h2>
     Trout Fishing Techniques and Gear Essentials
 </h2>

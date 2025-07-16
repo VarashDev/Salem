@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/bass-fishing-near-salem-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Bass fishing near Salem, Oregon"
@@ -180,6 +181,9 @@ ogimage={srcImage.src}
 <p>
     The lower sections of the North and South Santiam Rivers host summer smallmouth bass, especially near gravel bars and slower current areas.
 </p>
+
+<p>Read more about <Link href="/bass/best-spots/" text="Best bass fishing spots near Salem, Oregon" /></p>
+
 <h2>
     Bank Fishing vs Boat Fishing for Bass
 </h2>

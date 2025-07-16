@@ -1,0 +1,142 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import srcImage from "../../assets/best-trout-fishing-spots-salem-oregon.png";
+import { Image } from "astro:assets";
+import MyH1 from "../../components/MyH1.astro";
+import Bests from "../../components/Bests.astro";
+---
+<Layout 
+title="Best trout fishing spots near Salem, Oregon"
+description="Comprehensive guide to the best trout fishing hotspots – with seasonal tips, gear suggestions, and local insights."
+url="https://salem.oregonfishingforum.com/trout/best-spots/"
+type="article"
+site_name="Oregon Fishing Forum"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Best trout fishing spots near Salem, Oregon" />
+        <p class="mb-4">Comprehensive guide to the best trout fishing hotspots – with seasonal tips, gear suggestions, and local insights.</p>
+
+        <Image
+            src={srcImage}
+            alt="Best trout fishing spots near Salem, Oregon"
+            loading={"eager"}
+            fetchpriority={"high"}
+            class="rounded-xl shadow mx-auto"
+            />
+            <br>
+    </div>
+
+<h3>
+    1. <strong>Detroit Lake</strong>
+</h3>
+<ul>
+    <li>
+        <strong>Distance:</strong> ~50 miles east of Salem
+    </li>
+    <li>
+        <strong>Species:</strong> Rainbow trout (stocked heavily), some kokanee and brown trout
+    </li>
+    <li>
+        <strong>Why It’s Great:</strong> Large reservoir regularly stocked by ODFW; excellent for boat and shore anglers.
+    </li>
+    <li>
+        <strong>Best Time:</strong> Spring through early summer and fall
+    </li>
+</ul>
+<h3>
+    2. <strong>Silver Creek Reservoir (Silverton Reservoir)</strong>
+</h3>
+<ul>
+    <li>
+        <strong>Distance:</strong> ~15 miles northeast
+    </li>
+    <li>
+        <strong>Species:</strong> Stocked rainbow trout
+    </li>
+    <li>
+        <strong>Why It’s Great:</strong> Close to Salem, regularly stocked, easy shore access, family-friendly
+    </li>
+    <li>
+        <strong>Facilities:</strong> Picnic areas, boat ramp (no gas motors)
+    </li>
+</ul>
+<h3>
+    3. <strong>North Santiam River</strong>
+</h3>
+<ul>
+    <li>
+        <strong>Distance:</strong> 30–45 minutes east
+    </li>
+    <li>
+        <strong>Species:</strong> Wild and stocked rainbow trout, cutthroat trout
+    </li>
+    <li>
+        <strong>Why It’s Great:</strong> Cool, clear water from Detroit Dam; great fly fishing and spinner action
+    </li>
+    <li>
+        <strong>Best Spots:</strong> Packsaddle Park, Minto Park, Fishermen’s Bend
+    </li>
+</ul>
+<h3>
+    4. <strong>St. Louis Ponds</strong>
+</h3>
+<ul>
+    <li>
+        <strong>Distance:</strong> ~20 miles north
+    </li>
+    <li>
+        <strong>Species:</strong> Stocked rainbow trout in spring
+    </li>
+    <li>
+        <strong>Why It’s Great:</strong> Series of small ponds managed by ODFW; great for beginners and kids
+    </li>
+    <li>
+        <strong>Tip:</strong> Best fishing early in the season before water warms
+    </li>
+</ul>
+<h3>
+    5. <strong>Walter Wirth Lake (in Salem)</strong>
+</h3>
+<ul>
+    <li>
+        <strong>Distance:</strong> Right in town (in Cascades Gateway Park)
+    </li>
+    <li>
+        <strong>Species:</strong> Stocked rainbow trout
+    </li>
+    <li>
+        <strong>Why It’s Great:</strong> Urban fishing spot stocked multiple times in spring; good for quick trips
+    </li>
+    <li>
+        <strong>Bonus:</strong> Great place to take kids
+    </li>
+</ul>
+<h3>
+    6. <strong>Walling Pond (Salem)</strong>
+</h3>
+<ul>
+    <li>
+        <strong>Distance:</strong> Central Salem
+    </li>
+    <li>
+        <strong>Species:</strong> Rainbow trout (heavily stocked)
+    </li>
+    <li>
+        <strong>Why It’s Great:</strong> Year-round public access, part of ODFW’s “Easy Angling Oregon” sites
+    </li>
+</ul>
+<h2>
+    <strong>Best Seasons for Trout</strong>
+</h2>
+<ul>
+    <li>
+        <strong>Stocked trout:</strong> March–June, and some fall stocking (especially in ponds/lakes)
+    </li>
+    <li>
+        <strong>Wild trout rivers (e.g., North Santiam):</strong> Late spring through summer
+    </li>
+</ul>
+
+<Bests />
+</Layout>

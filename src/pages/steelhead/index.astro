@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/steelhead-fishing-near-salem-oregon.webp";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Steelhead Fishing near Salem, Oregon"
@@ -90,6 +91,9 @@ ogimage={srcImage.src}
 <p>
     The Willamette sees some steelhead action, especially near confluences with tributaries like the Molalla and Santiam Rivers. It's more popular for boat anglers due to its size.
 </p>
+
+<p>Read more about <Link href="/steelhead/best-spots/" text="Best steelhead fishing spots near Salem, Oregon" /></p>
+
 <h2>
     Licenses and Regulations for Steelhead Fishing
 </h2>
