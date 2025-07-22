@@ -1,0 +1,33 @@
+---
+const { salmon } = Astro.props;
+---
+{salmon != "chinook" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/salmon/chinook/">Chinook (King) salmon fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{salmon != "coho" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/salmon/coho/">Coho (Silver) salmon fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{salmon != "sockeye" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/salmon/sockeye/">Sockeye salmon fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{salmon != "pink" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/salmon/pink/">Pink salmon fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{salmon != "chum" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/salmon/chum/">Chum salmon fishing near Salem, Oregon</a>
+    </div>
+    )
+}
