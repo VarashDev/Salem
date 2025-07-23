@@ -1,0 +1,13 @@
+---
+const { season } = Astro.props;
+---
+{ season != "winter" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/steelhead/winter/">Winter steelhead fishing near Salem, Oregon</a>
+    </div>
+)}
+{ season != "summer" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/steelhead/summer/">Summer steelhead fishing near Salem, Oregon</a>
+    </div>
+)}
