@@ -1,0 +1,13 @@
+---
+const { bass } = Astro.props;
+---
+{ bass != "largemouth" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/bass/largemouth/">Largemouth bass fishing near Salem, Oregon</a>
+    </div>
+)}
+{ bass != "smallmouth" && (
+    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
+        <a href="/bass/smallmouth/">Smallmouth bass fishing near Salem, Oregon</a>
+    </div>
+)}
