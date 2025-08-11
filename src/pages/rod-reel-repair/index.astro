@@ -1,0 +1,247 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-salem-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Rod & Reel Repair in Salem, Oregon"
+description="Neutral directory of local repair shops and stores that can help with reel servicing, rod guide/tip fixes, and line spooling. Always call first to confirm services, pricing, and turnaround times."
+url="https://salem.oregonfishingforum.com/rod-reel-repair/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Rod & Reel Repair in Salem, Oregon" />
+        <p>
+            Neutral directory of local repair shops and stores that can help with reel servicing, rod guide/tip fixes, and line spooling. Always call first to confirm services, pricing, and turnaround times.
+        </p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Clean & tune</h3>
+      <p class="mt-2 text-sm text-slate-600">Annual service keeps drags smooth and bearings quiet—especially after sand or salt exposure.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Repair the right way</h3>
+      <p class="mt-2 text-sm text-slate-600">Replace cracked guides, bent frames, or sticky levelwinds without risking the blank or reel body.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Fresh line</h3>
+      <p class="mt-2 text-sm text-slate-600">Get spooled with correct backing, tension, and knots for your target species and reels.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Local knowledge</h3>
+      <p class="mt-2 text-sm text-slate-600">Shops know what’s working on the Willamette &amp; Santiam right now.</p>
+    </div>
+  </div>
+
+  <!-- Salem directory -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">Salem–Keizer Repair &amp; Spooling Directory</h2>
+    <p class="text-xs md:text-sm text-slate-500">Tip: ask about parts availability and warranty policies before dropping off.</p>
+  </div>
+
+  <!-- Desktop table -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+    <table class="w-full text-left text-sm bg-white">
+      <thead class="bg-slate-50 text-slate-700">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Business</th>
+          <th class="px-5 py-3 font-semibold">Services</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200">
+        <tr>
+          <td class="px-5 py-4 font-medium">FOJ Rod &amp; Reel Repair (formerly Elstad’s)</td>
+          <td class="px-5 py-4 text-slate-600">Rod &amp; reel repair; tackle</td>
+          <td class="px-5 py-4"><a href="tel:+15033636487" class="text-blue-600 hover:underline">(503) 363-6487</a></td>
+          <td class="px-5 py-4"><a href="https://www.facebook.com/fojrodandreelrepair/" class="text-blue-600 hover:underline" rel="nofollow">Facebook page</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Sportsman’s Warehouse — Salem</td>
+          <td class="px-5 py-4 text-slate-600">Line spooling; fishing dept. services</td>
+          <td class="px-5 py-4"><a href="tel:+15035890800" class="text-blue-600 hover:underline">(503) 589-0800</a></td>
+          <td class="px-5 py-4"><a href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/salem/1260-lancaster-dr-se" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store page</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">DICK’S Sporting Goods — Salem</td>
+          <td class="px-5 py-4 text-slate-600">General tackle; call about spooling</td>
+          <td class="px-5 py-4"><a href="tel:+15033634860" class="text-blue-600 hover:underline">(503) 363-4860</a></td>
+          <td class="px-5 py-4"><a href="https://stores.dickssportinggoods.com/or/salem/674/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store page</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Coastal Farm &amp; Ranch — Salem</td>
+          <td class="px-5 py-4 text-slate-600">Fishing dept.; licenses; call about spooling</td>
+          <td class="px-5 py-4"><a href="tel:+15034850668" class="text-blue-600 hover:underline">(503) 485-0668</a></td>
+          <td class="px-5 py-4"><a href="https://www.coastalcountry.com/about/store-locations/salem" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store page</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile cards -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">FOJ Rod &amp; Reel Repair (formerly Elstad’s)</h3>
+      <p class="mt-1 text-sm text-slate-600">Rod &amp; reel repair; tackle</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15033636487" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 363-6487</a>
+        <a href="https://www.facebook.com/fojrodandreelrepair/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Sportsman’s Warehouse — Salem</h3>
+      <p class="mt-1 text-sm text-slate-600">Line spooling; fishing dept. services</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035890800" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 589-0800</a>
+        <a href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/salem/1260-lancaster-dr-se" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Store page</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">DICK’S Sporting Goods — Salem</h3>
+      <p class="mt-1 text-sm text-slate-600">General tackle; call about spooling</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15033634860" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 363-4860</a>
+        <a href="https://stores.dickssportinggoods.com/or/salem/674/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Store page</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Coastal Farm &amp; Ranch — Salem</h3>
+      <p class="mt-1 text-sm text-slate-600">Fishing dept.; licenses; call about spooling</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15034850668" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 485-0668</a>
+        <a href="https://www.coastalcountry.com/about/store-locations/salem" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Store page</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Nearby & mail-in specialists -->
+  <div class="mt-12 mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">Nearby &amp; Mail-in Options</h2>
+    <p class="text-xs md:text-sm text-slate-500">Handy if local turnaround is long or parts are backordered.</p>
+  </div>
+
+  <!-- Desktop table -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+    <table class="w-full text-left text-sm bg-white">
+      <thead class="bg-slate-50 text-slate-700">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Business</th>
+          <th class="px-5 py-3 font-semibold">City</th>
+          <th class="px-5 py-3 font-semibold">Notes</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200">
+        <tr>
+          <td class="px-5 py-4 font-medium">Two Rivers Fly Shop</td>
+          <td class="px-5 py-4 text-slate-600">Albany</td>
+          <td class="px-5 py-4 text-slate-600">Fly line spooling; ask about minor rod fixes/referrals</td>
+          <td class="px-5 py-4"><a href="tel:+15419679800" class="text-blue-600 hover:underline">(541) 967-9800</a></td>
+          <td class="px-5 py-4"><a href="https://www.tworiversflyshop.biz/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">tworiversflyshop.biz</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Fisherman’s Marine &amp; Outdoor — Oregon City</td>
+          <td class="px-5 py-4 text-slate-600">Oregon City</td>
+          <td class="px-5 py-4 text-slate-600">Large tackle selection; call about spooling/repairs</td>
+          <td class="px-5 py-4"><a href="tel:+15035573313" class="text-blue-600 hover:underline">(503) 557-3313</a></td>
+          <td class="px-5 py-4"><a href="https://fishermans-marine.com/pages/contact" class="text-blue-600 hover:underline" target="_blank" rel="noopener">locations &amp; hours</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">The Reel Tech — Mail-in Service</td>
+          <td class="px-5 py-4 text-slate-600">Medford (mail-in statewide)</td>
+          <td class="px-5 py-4 text-slate-600">Specialist reel service/repair; can replace guides/tips</td>
+          <td class="px-5 py-4"><a href="tel:+15413240346" class="text-blue-600 hover:underline">(541) 324-0346</a></td>
+          <td class="px-5 py-4"><a href="https://www.thereeltech.com/service/fishing_reel_repair_service" class="text-blue-600 hover:underline" target="_blank" rel="noopener">thereeltech.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">CVZ Customs</td>
+          <td class="px-5 py-4 text-slate-600">Salem</td>
+          <td class="px-5 py-4 text-slate-600">Custom rod builds; contact about guide/tip repairs</td>
+          <td class="px-5 py-4"><a href="tel:+19713828100" class="text-blue-600 hover:underline">(971) 382-8100</a></td>
+          <td class="px-5 py-4"><a href="https://www.facebook.com/people/cVz-Customs/61557490015031/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Facebook</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile cards -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Two Rivers Fly Shop — Albany</h3>
+      <p class="mt-1 text-sm text-slate-600">Fly line spooling; ask about minor repairs/referrals</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15419679800" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 967-9800</a>
+        <a href="https://www.tworiversflyshop.biz/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Fisherman’s Marine &amp; Outdoor — Oregon City</h3>
+      <p class="mt-1 text-sm text-slate-600">Large tackle selection; call about spooling/repairs</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035573313" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 557-3313</a>
+        <a href="https://fishermans-marine.com/pages/contact" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Locations</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">The Reel Tech — Mail-in (Medford)</h3>
+      <p class="mt-1 text-sm text-slate-600">Specialist reel service; ships statewide</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15413240346" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 324-0346</a>
+        <a href="https://www.thereeltech.com/service/fishing_reel_repair_service" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Service page</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">CVZ Customs — Salem</h3>
+      <p class="mt-1 text-sm text-slate-600">Custom rod builds; call about repairs</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+19713828100" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(971) 382-8100</a>
+        <a href="https://www.facebook.com/people/cVz-Customs/61557490015031/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Facebook</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- How to choose -->
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">What to ask before you drop off</h2>
+    <ol class="mt-4 grid gap-4 md:grid-cols-2">
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Turnaround &amp; parts</span>
+        <span class="mt-1 block text-sm text-slate-600">Are parts in stock? What’s the ETA if they’re not?</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Warranty</span>
+        <span class="mt-1 block text-sm text-slate-600">Some brands require factory service—ask before a third-party repair.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Spooling details</span>
+        <span class="mt-1 block text-sm text-slate-600">Line type, pound-test, backing, and knot preference for your reel &amp; technique.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Quotes &amp; communication</span>
+        <span class="mt-1 block text-sm text-slate-600">Ask for a written estimate and a call if parts/prices change.</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Friendly reminder -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+    <p class="text-sm">
+      Many stores also sell <span class="font-medium">ODFW licenses/tags</span>—handy while you’re picking up your reels. Bring the reel and the rod when possible so they can check fit and balance.
+    </p>
+  </div>
+
+</Layout>

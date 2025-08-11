@@ -1,0 +1,217 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-salem-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Fishing Classes & Clinics in Salem, Oregon"
+description="Learn fundamentals or sharpen skills for the Willamette and North Santiam. This neutral directory links to providers, clubs, and stores—check their pages for current dates, pricing, and meeting locations."
+url="https://salem.oregonfishingforum.com/classes-clinics/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Classes & Clinics in Salem, Oregon" />
+        <p>
+            Learn fundamentals or sharpen skills for the Willamette and North Santiam. This neutral directory links to providers, clubs, and stores—check their pages for current dates, pricing, and meeting locations.
+        </p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Master the basics</h3>
+      <p class="mt-2 text-sm text-slate-600">Casting, knots, rigging, reading water, and safe wading/boating.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Local seasons</h3>
+      <p class="mt-2 text-sm text-slate-600">Dial in salmon/steelhead timing and techniques for the Santiam & Willamette.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Hands-on practice</h3>
+      <p class="mt-2 text-sm text-slate-600">Small groups and on-water reps build real confidence.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Community</h3>
+      <p class="mt-2 text-sm text-slate-600">Clubs host clinics, tying nights, and guest speakers year-round.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">Salem–Keizer Class & Clinic Directory</h2>
+    <p class="text-xs md:text-sm text-slate-500">Tip: ask about class size, included gear, and meeting ramps/parks.</p>
+  </div>
+
+  <!-- Desktop table -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+    <table class="w-full text-left text-sm bg-white">
+      <thead class="bg-slate-50 text-slate-700">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Provider</th>
+          <th class="px-5 py-3 font-semibold">Focus</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200">
+        <tr>
+          <td class="px-5 py-4 font-medium">ODFW Workshops & Family Fishing Events</td>
+          <td class="px-5 py-4 text-slate-600">Beginner instruction; gear often provided at events</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4">
+            <a href="https://myodfw.com/workshops-and-events" class="text-blue-600 hover:underline" target="_blank" rel="noopener">myodfw.com/workshops-and-events</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Santiam Flycasters — Salem (club)</td>
+          <td class="px-5 py-4 text-slate-600">Casting practice, clinics & programs (club-run)</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4">
+            <a href="https://santiamflycasters.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">santiamflycasters.com</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Salem NW Steelheaders — Chapter (club)</td>
+          <td class="px-5 py-4 text-slate-600">Clinics & presentations; community outings</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4">
+            <a href="https://salemnwsteelheaders.org/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">salemnwsteelheaders.org</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Sportsman’s Warehouse — Salem</td>
+          <td class="px-5 py-4 text-slate-600">Store seminars/events (varies); line spooling available</td>
+          <td class="px-5 py-4"><a href="tel:+15035890800" class="text-blue-600 hover:underline">(503) 589-0800</a></td>
+          <td class="px-5 py-4">
+            <a href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/salem/1260-lancaster-dr-se" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store page</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">DICK’S Sporting Goods — Salem</td>
+          <td class="px-5 py-4 text-slate-600">Occasional events; general tackle & licenses</td>
+          <td class="px-5 py-4"><a href="tel:+15033634860" class="text-blue-600 hover:underline">(503) 363-4860</a></td>
+          <td class="px-5 py-4">
+            <a href="https://stores.dickssportinggoods.com/or/salem/674/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store page</a>
+          </td>
+        </tr>
+
+        <!-- Nearby / worth the drive -->
+        <tr>
+          <td class="px-5 py-4 font-medium">Two Dudes Fly Fishing — Schools (Albany)</td>
+          <td class="px-5 py-4 text-slate-600">Fly schools & lessons; guided days</td>
+          <td class="px-5 py-4">
+            <a href="tel:+15418706640" class="text-blue-600 hover:underline">(541) 870-6640</a> /
+            <a href="tel:+15039322426" class="text-blue-600 hover:underline">(503) 932-2426</a>
+          </td>
+          <td class="px-5 py-4"><a href="https://www.twodudesflyfishing.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">twodudesflyfishing.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Orvis — Lake Oswego</td>
+          <td class="px-5 py-4 text-slate-600">Free Fly Fishing 101/201 + tying 101; casting clinics</td>
+          <td class="px-5 py-4"><a href="tel:+15035987680" class="text-blue-600 hover:underline">(503) 598-7680</a></td>
+          <td class="px-5 py-4"><a href="https://stores.orvis.com/us/oregon/lakeoswego" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Store calendar</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile cards -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">ODFW Workshops & Family Fishing Events</h3>
+      <p class="mt-1 text-sm text-slate-600">Beginner instruction; equipment often provided</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://myodfw.com/workshops-and-events" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Events</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Santiam Flycasters — Salem (club)</h3>
+      <p class="mt-1 text-sm text-slate-600">Casting practice, clinics & monthly programs</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://santiamflycasters.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Salem NW Steelheaders — Chapter</h3>
+      <p class="mt-1 text-sm text-slate-600">Clinics & presentations; community outings</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://salemnwsteelheaders.org/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Sportsman’s Warehouse — Salem</h3>
+      <p class="mt-1 text-sm text-slate-600">Store seminars/events (varies); line spooling</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035890800" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 589-0800</a>
+        <a href="https://stores.sportsmans.com/sportsmans-warehouse/us/or/salem/1260-lancaster-dr-se" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Store page</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">DICK’S Sporting Goods — Salem</h3>
+      <p class="mt-1 text-sm text-slate-600">Occasional events; general tackle & licenses</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15033634860" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 363-4860</a>
+        <a href="https://stores.dickssportinggoods.com/or/salem/674/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Store page</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Two Dudes Fly Fishing — Schools (Albany)</h3>
+      <p class="mt-1 text-sm text-slate-600">Fly schools & lessons; guided days</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 870-6640 / (503) 932-2426</span>
+        <a href="https://www.twodudesflyfishing.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Orvis — Lake Oswego</h3>
+      <p class="mt-1 text-sm text-slate-600">Free FF101/201 + tying 101; casting clinics</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15035987680" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 598-7680</a>
+        <a href="https://stores.orvis.com/us/oregon/lakeoswego" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Calendar</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- How to choose -->
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">How to choose the right class</h2>
+    <ol class="mt-4 grid gap-4 md:grid-cols-2">
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Match your goal</span>
+        <span class="mt-1 block text-sm text-slate-600">New to fishing? Start with ODFW or store intros. Targeting Santiam steelhead? Look for technique-specific clinics.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Ask about class size</span>
+        <span class="mt-1 block text-sm text-slate-600">Smaller groups = more reps & feedback. Many on-water clinics cap at 4–6 anglers.</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">What’s included</span>
+        <span class="mt-1 block text-sm text-slate-600">Rods/reels/flies provided? Waders required? Are permits or park fees extra?</span>
+      </li>
+      <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <span class="block font-medium text-slate-900">Location & access</span>
+        <span class="mt-1 block text-sm text-slate-600">Some meet at stores; others at local parks/ramps. Verify meeting points and accessibility.</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+    <p class="text-sm">
+      Tip: clubs often run <span class="font-medium">free casting practice</span> days—great for tuning your stroke before a guided trip. You can also track ODFW events and store seminars on their calendars.
+    </p>
+  </div>
+
+</Layout>

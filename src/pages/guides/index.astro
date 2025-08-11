@@ -1,0 +1,213 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyH1 from "../../components/MyH1.astro";
+import srcImage from "../../assets/fishing-near-salem-oregon.webp";
+import { Image } from "astro:assets";
+import Link from "../../components/Link.astro";
+---
+<Layout 
+title="Fishing Guides in Salem, Oregon"
+description="Salem sits between the Willamette River and the North Santiam, with Detroit Lake and coastal rivers a day-trip away. Here’s a neutral directory of guides who regularly work these waters. Always confirm seasons, meeting ramps, and what’s included before you book."
+url="https://salem.oregonfishingforum.com/guides/"
+type="article"
+site_name="Portland Fishing"
+ogimage={srcImage.src}
+>
+    <div class="text-center">
+        <MyH1 text="Fishing Guides in Salem, Oregon" />
+        <p>
+            Salem sits between the Willamette River and the North Santiam, with Detroit Lake and coastal rivers a day-trip away. Here’s a neutral directory of guides who regularly work these waters. Always confirm seasons, meeting ramps, and what’s included before you book.
+        </p>
+    </div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Dialed-in timing</h3>
+      <p class="mt-2 text-sm text-slate-600">Local pros track Willamette springers, Santiam steelhead, and flow windows so you fish peak conditions.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">All the gear</h3>
+      <p class="mt-2 text-sm text-slate-600">Rods, reels, tackle, safety gear—often included so you can just show up with a license and layers.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Access & safety</h3>
+      <p class="mt-2 text-sm text-slate-600">Know the put-ins, take-outs, and safe flows on the Santiam and Willamette backchannels.</p>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="font-semibold">Learn faster</h3>
+      <p class="mt-2 text-sm text-slate-600">Casting, presentations, knots, and reading water—coaching turns into more hook-ups later.</p>
+    </div>
+  </div>
+
+  <!-- Directory heading -->
+  <div class="mb-4 flex items-end justify-between gap-4">
+    <h2 class="text-2xl md:text-3xl font-semibold text-slate-900">Salem–Santiam–Willamette Guide Directory</h2>
+    <p class="text-xs md:text-sm text-slate-500">Tip: ask about meeting ramp, group size, and species focus for your dates.</p>
+  </div>
+
+  <!-- Desktop table -->
+  <div class="hidden md:block overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+    <table class="w-full text-left text-sm bg-white">
+      <thead class="bg-slate-50 text-slate-700">
+        <tr>
+          <th class="px-5 py-3 font-semibold">Guide / Business</th>
+          <th class="px-5 py-3 font-semibold">Waters &amp; Target Species</th>
+          <th class="px-5 py-3 font-semibold">Phone</th>
+          <th class="px-5 py-3 font-semibold">Website</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200">
+        <tr>
+          <td class="px-5 py-4 font-medium">Fisherman Mike’s Guide Service</td>
+          <td class="px-5 py-4 text-slate-600">North &amp; South Santiam; salmon &amp; steelhead</td>
+          <td class="px-5 py-4"><a href="tel:+19712733422" class="text-blue-600 hover:underline">(971) 273-3422</a></td>
+          <td class="px-5 py-4"><a href="https://fishermanmikes.com/" class="text-blue-600 hover:underline">fishermanmikes.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">RO Guide Service (Riley Olson)</td>
+          <td class="px-5 py-4 text-slate-600">Santiam system, Willamette &amp; coastal options</td>
+          <td class="px-5 py-4"><a href="tel:+15416191262" class="text-blue-600 hover:underline">(541) 619-1262</a></td>
+          <td class="px-5 py-4"><a href="https://www.ro-guide-service.com/" class="text-blue-600 hover:underline">ro-guide-service.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Amerman’s Eggs &amp; Guide Service</td>
+          <td class="px-5 py-4 text-slate-600">Santiams, Middle Fork Willamette; salmon &amp; steelhead</td>
+          <td class="px-5 py-4"><a href="tel:+15036063447" class="text-blue-600 hover:underline">(503) 606-3447</a></td>
+          <td class="px-5 py-4"><a href="https://amermaneggs.com/" class="text-blue-600 hover:underline">amermaneggs.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">The Oregon Experience (Arden Corey)</td>
+          <td class="px-5 py-4 text-slate-600">North Santiam &amp; Detroit Lake area</td>
+          <td class="px-5 py-4"><a href="tel:+15038972391" class="text-blue-600 hover:underline">(503) 897-2391</a></td>
+          <td class="px-5 py-4"><a href="https://oregon-experience.com/" class="text-blue-600 hover:underline">oregon-experience.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Caleb’s Guide Service</td>
+          <td class="px-5 py-4 text-slate-600">Willamette &amp; Columbia (seasonal Willamette Springer trips)</td>
+          <td class="px-5 py-4"><a href="tel:+15036801429" class="text-blue-600 hover:underline">(503) 680-1429</a></td>
+          <td class="px-5 py-4"><a href="https://calebsguideservice.com/" class="text-blue-600 hover:underline">calebsguideservice.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">Two Dudes Fly Fishing</td>
+          <td class="px-5 py-4 text-slate-600">Willamette &amp; McKenzie (fly); trout &amp; summer steelhead</td>
+          <td class="px-5 py-4">
+            <a href="tel:+15418706640" class="text-blue-600 hover:underline">(541) 870-6640</a> / 
+            <a href="tel:+15039322426" class="text-blue-600 hover:underline">(503) 932-2426</a>
+          </td>
+          <td class="px-5 py-4"><a href="https://www.twodudesflyfishing.com/" class="text-blue-600 hover:underline">twodudesflyfishing.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">RiverTrek Northwest (Wade Grant)</td>
+          <td class="px-5 py-4 text-slate-600">Willamette/Columbia sturgeon &amp; salmon (seasonal)</td>
+          <td class="px-5 py-4"><a href="tel:+14588001200" class="text-blue-600 hover:underline">(458) 800-1200</a></td>
+          <td class="px-5 py-4"><a href="https://rivertreknw.com/" class="text-blue-600 hover:underline">rivertreknw.com</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">eNRG Kayaking — Raft Fishing (near Salem)</td>
+          <td class="px-5 py-4 text-slate-600">Raft-based fishing trips; inquire for dates/species</td>
+          <td class="px-5 py-4"><a href="tel:+15037721122" class="text-blue-600 hover:underline">(503) 772-1122</a></td>
+          <td class="px-5 py-4"><a href="https://enrgkayaking.com/raft-fishing-trip-near-salem-or-enrg/" class="text-blue-600 hover:underline">trip info</a></td>
+        </tr>
+        <tr>
+          <td class="px-5 py-4 font-medium">North Santiam River Guides Association</td>
+          <td class="px-5 py-4 text-slate-600">Local association; directory of multiple member guides</td>
+          <td class="px-5 py-4 text-slate-500">—</td>
+          <td class="px-5 py-4"><a href="https://www.nsrga.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">nsrga.com</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile cards -->
+  <div class="md:hidden space-y-4">
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Fisherman Mike’s Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600">North &amp; South Santiam; salmon &amp; steelhead</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+19712733422" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(971) 273-3422</a>
+        <a href="https://fishermanmikes.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">RO Guide Service (Riley Olson)</h3>
+      <p class="mt-1 text-sm text-slate-600">Santiam, Willamette &amp; coastal options</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15416191262" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 619-1262</a>
+        <a href="https://www.ro-guide-service.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Amerman’s Eggs &amp; Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600">Santiams, Middle Fork Willamette</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15036063447" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 606-3447</a>
+        <a href="https://amermaneggs.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">The Oregon Experience (Arden Corey)</h3>
+      <p class="mt-1 text-sm text-slate-600">North Santiam &amp; Detroit Lake</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15038972391" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 897-2391</a>
+        <a href="https://oregon-experience.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Caleb’s Guide Service</h3>
+      <p class="mt-1 text-sm text-slate-600">Willamette &amp; Columbia (seasonal)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15036801429" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 680-1429</a>
+        <a href="https://calebsguideservice.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">Two Dudes Fly Fishing</h3>
+      <p class="mt-1 text-sm text-slate-600">Willamette &amp; McKenzie (fly)</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(541) 870-6640 / (503) 932-2426</span>
+        <a href="https://www.twodudesflyfishing.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">RiverTrek Northwest</h3>
+      <p class="mt-1 text-sm text-slate-600">Willamette/Columbia sturgeon &amp; salmon</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+14588001200" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(458) 800-1200</a>
+        <a href="https://rivertreknw.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Website</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">eNRG Kayaking — Raft Fishing</h3>
+      <p class="mt-1 text-sm text-slate-600">Raft-based fishing near Salem</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <a href="tel:+15037721122" class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm">(503) 772-1122</a>
+        <a href="https://enrgkayaking.com/raft-fishing-trip-near-salem-or-enrg/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Trip info</a>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h3 class="text-lg font-semibold">North Santiam River Guides Association</h3>
+      <p class="mt-1 text-sm text-slate-600">Local directory of member guides</p>
+      <div class="mt-3 flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center rounded-xl border border-slate-200 px-3 py-1.5 text-sm text-slate-500">—</span>
+        <a href="https://www.nsrga.com/" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-1.5 text-sm font-medium text-white">Directory</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Helpful tip -->
+  <div class="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+    <p class="text-sm">
+      Check <a class="underline decoration-amber-400 underline-offset-2" href="https://myodfw.com/recreation-report/fishing-report/willamette-zone">ODFW’s Willamette Zone fishing report</a> and the latest
+      <a class="underline decoration-amber-400 underline-offset-2" href="https://myodfw.com/articles/regulation-updates">regulation updates</a> before you go. Seasons and limits can change quickly.
+    </p>
+  </div>
+
+</Layout>
