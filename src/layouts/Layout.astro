@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
 import Nav2 from "../components/Nav2.astro";
-const {title, description, url, type, site_name, ogimage} = Astro.props;
+import Footer from "../components/Footer.astro";
+const {title, description, url, type, site_name, ogimage, footer_location} = Astro.props;
 ---
 <html lang="en">
 	<head>
@@ -30,21 +31,7 @@ const {title, description, url, type, site_name, ogimage} = Astro.props;
             <slot />
 
             </main>
-		<footer>
-			<div class="bg-teal-700 p-4">
-				<div class="grid gap-2 grid-cols-2 md:grid-cols-4 px-24 max-w-7xl mx-auto w-full max-sm:px-5 text-white text-lg font-semibold">
-					<div><a href="https://portland.oregonfishingforum.com">Portland</a></div>
-					<div><a href="https://eugene.oregonfishingforum.com">Eugene</a></div>
-					<div><a href="https://salem.oregonfishingforum.com">Salem</a></div>
-					<div><a href="https://gresham.oregonfishingforum.com">Gresham</a></div>
-					<div><a href="https://hillsboro.oregonfishingforum.com">Hillsboro</a></div>
-					<div><a href="https://bend.oregonfishingforum.com">Bend</a></div>
-					<div><a href="https://beaverton.oregonfishingforum.com">Beaverton</a></div>
-					<div><a href="https://medford.oregonfishingforum.com">Medford</a></div>
-				</div>
-			</div>
-			<div class="bg-teal-900 text-white text-center p-4">© 2006-2025 <a href="https://www.oregonfishingforum.com">Oregon Fishing Forum</a></div>
-		</footer>
+<Footer footer_location={footer_location} />
   <script>
   // Mobile menu toggle
   document.getElementById('mobile-menu-button').addEventListener('click', () => {
