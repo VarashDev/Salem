@@ -1,13 +1,19 @@
 ---
 const { bass } = Astro.props;
+import { Image } from "astro:assets";
+
+import largeImage from "../assets/largemouth-bass-fishing-salem-oregon.png";
+import smallImage from "../assets/smallmouth-bass-fishing-salem-oregon.png";
 ---
 { bass != "largemouth" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/bass/largemouth/">Largemouth bass fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={largeImage} alt="Largemouth bass fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/bass/largemouth/" class="pl-4">Largemouth bass fishing near Salem, Oregon</a>
     </div>
 )}
 { bass != "smallmouth" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/bass/smallmouth/">Smallmouth bass fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={smallImage} alt="Smallmouth bass fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/bass/smallmouth/" class="pl-4">Smallmouth bass fishing near Salem, Oregon</a>
     </div>
 )}

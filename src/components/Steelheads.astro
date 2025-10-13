@@ -1,13 +1,19 @@
 ---
 const { season } = Astro.props;
+import { Image } from "astro:assets";
+
+import summerImage from "../assets/summer-steelhead-fishing-salem-oregon.png";
+import winterImage from "../assets/winter-steelhead-fishing-salem-oregon.png";
 ---
 { season != "winter" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/steelhead/winter/">Winter steelhead fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={winterImage} alt="Winter steelhead fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/steelhead/winter/" class="pl-4">Winter steelhead fishing near Salem, Oregon</a>
     </div>
 )}
 { season != "summer" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/steelhead/summer/">Summer steelhead fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={summerImage} alt="Summer steelhead fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/steelhead/summer/" class="pl-4">Summer steelhead fishing near Salem, Oregon</a>
     </div>
 )}

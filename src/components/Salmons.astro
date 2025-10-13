@@ -1,33 +1,45 @@
 ---
 const { salmon } = Astro.props;
+import { Image } from "astro:assets";
+
+import chinookImage from "../assets/chinook-salmon-fishing-salem-oregon.png";
+import cohoImage from "../assets/coho-salmon-fishing-salem-oregon.png";
+import sockeyeImage from "../assets/sockeye-salmon-fishing-salem-oregon.png";
+import pinkImage from "../assets/pink-salmon-fishing-salem-oregon.png";
+import chumImage from "../assets/chum-salmon-fishing-salem-oregon.png";
 ---
 {salmon != "chinook" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/salmon/chinook/">Chinook (King) salmon fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={chinookImage} alt="Chinook (King) salmon fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/salmon/chinook/" class="pl-4">Chinook (King) salmon fishing near Salem, Oregon</a>
     </div>
     )
 }
 {salmon != "coho" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/salmon/coho/">Coho (Silver) salmon fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={cohoImage} alt="Coho (Silver) salmon fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/salmon/coho/" class="pl-4">Coho (Silver) salmon fishing near Salem, Oregon</a>
     </div>
     )
 }
 {salmon != "sockeye" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/salmon/sockeye/">Sockeye salmon fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={sockeyeImage} alt="Sockeye salmon fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/salmon/sockeye/" class="pl-4">Sockeye salmon fishing near Salem, Oregon</a>
     </div>
     )
 }
 {salmon != "pink" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/salmon/pink/">Pink salmon fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={pinkImage} alt="Pink salmon fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/salmon/pink/" class="pl-4">Pink salmon fishing near Salem, Oregon</a>
     </div>
     )
 }
 {salmon != "chum" && (
-    <div class="bg-white p-4 m-4 shadow text-blue-700 font-semibold">
-        <a href="/salmon/chum/">Chum salmon fishing near Salem, Oregon</a>
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={chumImage} alt="Chum salmon fishing near Salem" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/salmon/chum/" class="pl-4">Chum salmon fishing near Salem, Oregon</a>
     </div>
     )
 }
