@@ -1,0 +1,37 @@
+---
+const { trout } = Astro.props;
+import { Image } from "astro:assets";
+
+import rainbowImage from "../assets/rainbow-trout.jpg";
+import cutthroatImage from "../assets/cutthroat-trout.png";
+import brookImage from "../assets/brook-trout.png";
+import brownImage from "../assets/brown-trout.jpg";
+---
+{trout != "rainbow" && (
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={rainbowImage} alt="Rainbow trout" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/trout/rainbow/" class="pl-4">Rainbow trout fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{trout != "cutthroat" && (
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={cutthroatImage} alt="Cutthroat trout" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/trout/cutthroat/" class="pl-4">Cutthroat trout fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{trout != "brook" && (
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={brookImage} alt="Brook trout" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/trout/brook/" class="pl-4">Brook trout fishing near Salem, Oregon</a>
+    </div>
+    )
+}
+{trout != "brown" && (
+    <div class="flex bg-white p-2 my-4 shadow text-blue-700 font-semibold rounded-md">
+        <Image src={brownImage} alt="Brown trout" width={100} loading="lazy" class="rounded-md shadow-md" />
+        <a href="/trout/brown/" class="pl-4">Brown trout fishing near Salem, Oregon</a>
+    </div>
+    )
+}
